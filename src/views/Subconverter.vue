@@ -474,10 +474,9 @@ export default {
           "sub.cm": "https://sub.cm/short",
         },
         customBackend: {
-          "车车后端：https://back.p-p.men"
+          "车车自建后端：https://back.p-p.men",
           "肥羊增强型后端【vless reality+hy1+hy2】": "https://url.v1.mk",
           "肥羊备用后端【vless reality+hy1+hy2】": "https://sub.d1.mk",
-          "つつ-多地防失联【负载均衡+国内优化】": "https://api.tsutsu.one",
           nameless13提供: "https://www.nameless13.com",
           subconverter作者提供: "https://sub.xeton.dev",
           "sub-web作者提供": "https://api.wcc.best",
@@ -487,7 +486,6 @@ export default {
           {value: "https://back.p-p.men"},
           {value: "https://url.v1.mk"},
           {value: "https://sub.d1.mk"},
-          {value: "https://api.tsutsu.one"},
           {value: "https://www.nameless13.com"},
           {value: "https://sub.xeton.dev"},
           {value: "https://api.wcc.best"},
