@@ -474,7 +474,7 @@ export default {
           "sub.cm": "https://sub.cm/short",
         },
         customBackend: {
-          "车车自建后端：https://back.p-p.men",
+          "车车自建后端": "https://back.p-p.men",
           "肥羊增强型后端【vless reality+hy1+hy2】": "https://url.v1.mk",
           "肥羊备用后端【vless reality+hy1+hy2】": "https://sub.d1.mk",
           nameless13提供: "https://www.nameless13.com",
