@@ -12,7 +12,7 @@
             <svg-icon class="youguan" icon-class="youtube" style="float:right;margin-left:10px" @click="gotoYouTuBe"/>
             <svg-icon class="channel" icon-class="telegram" style="float:right;margin-left: 10px"
                       @click="gotoTgChannel"/>
-            <div style="text-align:center;font-size:15px">订 阅 转 换</div>
+            <div style="text-align:center;font-size:15px">车 车 的 订 阅 转 换</div>
           </div>
           <el-container>
             <el-form :model="form" label-width="80px" label-position="left" style="width: 100%">
@@ -474,6 +474,7 @@ export default {
           "sub.cm": "https://sub.cm/short",
         },
         customBackend: {
+          "车车后端：https://back.p-p.men"
           "肥羊增强型后端【vless reality+hy1+hy2】": "https://url.v1.mk",
           "肥羊备用后端【vless reality+hy1+hy2】": "https://sub.d1.mk",
           "つつ-多地防失联【负载均衡+国内优化】": "https://api.tsutsu.one",
@@ -483,6 +484,7 @@ export default {
           "sub作者&lhie1提供": "https://api.dler.io",
         },
         backendOptions: [
+          {value: "https://back.p-p.men"},
           {value: "https://url.v1.mk"},
           {value: "https://sub.d1.mk"},
           {value: "https://api.tsutsu.one"},
@@ -889,7 +891,7 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: this.getUrlParam() == "" ? "https://url.v1.mk" : this.getUrlParam(),
+        customBackend: this.getUrlParam() == "" ? "https://back.p-p.men" : this.getUrlParam(),
         shortType: "https://v1.mk/short",
         remoteConfig: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini",
         excludeRemarks: "",
@@ -1402,9 +1404,9 @@ export default {
           .then(res => {
             this.backendVersion = res.data.replace(/backend\n$/gm, "");
             this.backendVersion = this.backendVersion.replace("subconverter", "SubConverter");
-            let a = this.form.customBackend.indexOf("url.v1.mk") !== -1 || this.form.customBackend.indexOf("sub.d1.mk") !== -1;
+            let a = this.form.customBackend.indexOf("back.p-p.men") !== -1 || this.form.customBackend.indexOf("sub.d1.mk") !== -1;
             let b = this.form.customBackend.indexOf("127.0.0.1") !== -1;
-            a ? this.$message.success(`${this.backendVersion}` + "肥羊负载均衡增强版后端，已屏蔽免费节点池（会返回403），额外支持vless reality+hysteria+hysteria2订阅转换") : b ? this.$message.success(`${this.backendVersion}` + "本地局域网自建版后端") : this.$message.success(`${this.backendVersion}` + "官方原版后端不支持vless/hysteria订阅转换");
+            a ? this.$message.success(`${this.backendVersion}` + "欢迎使用车车自建后端") : b ? this.$message.success(`${this.backendVersion}` + "本地局域网自建版后端") : this.$message.success(`${this.backendVersion}`);
           })
           .catch(() => {
             this.$message.error("请求SubConverter版本号返回数据失败，该后端不可用！");
