@@ -1,8 +1,12 @@
 {
-  "name": "sub-web-modify",
+  "name": "cheche-sub-web",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
+    "postinstall": "node scripts/fix-node-ipc.cjs",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
@@ -15,6 +19,7 @@
     "vue-router": "^3.6.5"
   },
   "devDependencies": {
+    "@achrinza/node-ipc": "github:youshandefeiyang/node-ipc#bc368155018d757c0591074abf4319d402968ed4",
     "@vue/cli-plugin-babel": "~5.0.8",
     "@vue/cli-plugin-router": "~5.0.8",
     "@vue/cli-service": "~5.0.8",

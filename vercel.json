@@ -1,0 +1,6 @@
+{
+  "framework": null,
+  "installCommand": "yarn install --ignore-engines",
+  "buildCommand": "yarn build",
+  "outputDirectory": "dist"
+}
