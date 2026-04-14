@@ -417,10 +417,12 @@ export default {
         },
         customBackend: {
           "车车自建(mihomo全协议支持)": defaultBackend,
+          "车车自建老版本": "https://oldback.p-p.men",
           "肥羊增强型后端【vless reality+anytls】": "https://api.v1.mk"
         },
         backendOptions: [
           {value: defaultBackend},
+          {value: "https://oldback.p-p.men"},
           {value: "https://api.v1.mk"}
         ],
         remoteConfig: [
